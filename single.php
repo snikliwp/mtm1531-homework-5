@@ -1,4 +1,5 @@
 <?php 
+	require_once 'includes/filter-wrapper.php';
 
 $id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 if (empty($id)) {
@@ -7,7 +8,7 @@ if (empty($id)) {
 };
 
 // you only need to connect to the database if the id is not empty
-require_once '../includes/db.php';
+require_once 'includes/db.php';
 
 // prepare() creates a stored procedure 
 $sql = $db->prepare('
@@ -38,7 +39,7 @@ if (empty($results)) {
 <html>
 <head>
 <meta charset="utf-8">
-<title><?php echo $results['title'];?> &middot;s Dinosaurs</title>
+<title><?php echo $results['title'];?> &middot; Movies</title>
 </head>
 
 <body>

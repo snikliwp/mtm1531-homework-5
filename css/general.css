@@ -1,3 +1,62 @@
 @charset "utf-8";
 /* CSS Document */
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 860px;
+	margin: auto;
+	
+}
+
+ul,
+li {
+	padding: 1em;
+	list-style: none;
+	
+	
+	
+}
+
+
+
+
+
+
+
+nav a span:hover,
+nav a span:focus,
+nav a span:active {
+	color: #007ca5;
+}
+nav a,
+nav a:link,
+nav a:visited {
+	display: inline;
+	margin:0;
+	padding: 0.75em 30px;
+	Color: #000;
+	font-weight:bold;
+	text-decoration:none;
+	zoom: 1;
+}
+nav a:hover,
+nav a:focus,
+nav a:active {
+	background-color: #9e0b0f;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
 
