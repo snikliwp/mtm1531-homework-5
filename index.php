@@ -1,11 +1,9 @@
 <?php 
-require_once '../includes/db.php';
+require_once 'includes/db.php';
+
 $results = $db->query('SELECT id, title, release_date, director 
 				FROM movies 
 				ORDER BY release_date ASC');
-
-
-
 ?>
 
 
