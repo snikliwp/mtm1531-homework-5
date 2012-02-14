@@ -44,9 +44,20 @@ if (empty($results)) {
 </head>
 
 <body>
-	<h1><?php echo $results['title'];?></h1>
-	<p>Release Date: <?php echo $results['release_date']; ?></p>
-	<p>Director: <?php echo $results['director']; ?></p>
+	<table class='main'>
+	<caption><?php echo $results['title'];?></caption>
+		<tbody>
+			<tr>
+				<td>Release Date: </td>
+				<td><?php echo $results['release_date']; ?></td>
+			</tr>
+			<tr>
+				<td>Director: </td>
+				<td><?php echo $results['director']; ?></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
 	<a href="index.php"><button class="add">Back to the Movie List</button></a>
 
 </body>
