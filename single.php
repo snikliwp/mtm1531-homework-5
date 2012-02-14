@@ -47,6 +47,7 @@ if (empty($results)) {
 	<h1><?php echo $results['title'];?></h1>
 	<p>Release Date: <?php echo $results['release_date']; ?></p>
 	<p>Director: <?php echo $results['director']; ?></p>
+	<a href="index.php"><button class="add">Back to the Movie List</button></a>
 
 </body>
 </html>

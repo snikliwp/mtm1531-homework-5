@@ -55,19 +55,34 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <body>
 <form method="post" action="add.php">
-	<div class="title">
-		<label for="title"> Movie Title <?php if(isset($errors['title'])) : ?> <strong>is Required</strong><?php endif; ?></label>
-		<input type="text" id="title" name="title" value="<?php echo $title; ?>" required>
-	</div>
-	<div class="director">
-		<label for="director">Director Name <?php if(isset($errors['director'])) : ?> <strong>is Required</strong><?php endif; ?></label>
-		<input type="text" id="director" name="director" value="<?php echo $director; ?>" required>
-	</div>
-	<div class="release_date">
-		<label for= "release_date">Release Date <?php if(isset($errors['release_date'])) : ?> <strong>is Required</strong><?php endif; ?></label>
-		<input type="date" id="release_date" name="release_date" value="<?php echo $release_date; ?>" required>
-	</div>
-	<button type="submit">Add</button>
+		<table class='main'>
+		<caption>Add a Movie</caption>
+			<tbody>
+				<div class="title">
+				 <tr><td>
+					<label for="title"> Movie Title <?php if(isset($errors['title'])) : ?> <strong>is Required</strong><?php endif; ?></label>
+				 </td><td>
+					<input type="text" id="title" name="title" value="<?php echo $title; ?>" required>
+				 </td></tr>
+				</div>
+				<div class="director">
+				 <tr><td>
+					<label for="director">Director Name <?php if(isset($errors['director'])) : ?> <strong>is Required</strong><?php endif; ?></label>
+				 </td><td>
+					<input type="text" id="director" name="director" value="<?php echo $director; ?>" required>
+				 </td></tr>
+				</div>
+				<div class="release_date">
+				 <tr><td>
+					<label for= "release_date">Release Date <?php if(isset($errors['release_date'])) : ?> <strong>is Required</strong><?php endif; ?></label>
+				 </td><td>
+					<input type="date" id="release_date" name="release_date" value="<?php echo $release_date; ?>" required>
+				 </td></tr>
+				</div>
+			</tbody>
+		</table>
+		<br>
+	<button type="submit">Add a new Movie</button> &nbsp;<a href="index.php"><button class="cancel">Cancel</button></a>
 </form>
 
 
